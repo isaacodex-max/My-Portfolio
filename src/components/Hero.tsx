@@ -45,16 +45,35 @@ const Hero = () => {
             </div>
             
             <div className="flex justify-center lg:justify-start space-x-6 animate-fade-in" style={{ animationDelay: "0.8s" }}>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-200 transform hover:scale-110">
+              {/* GitHub */}
+              <a
+                href="https://github.com/isaacodex-max"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
+              >
                 <Github size={24} className="sm:w-7 sm:h-7" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-200 transform hover:scale-110">
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/isaac-ayomide-1a96031b0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
+              >
                 <Linkedin size={24} className="sm:w-7 sm:h-7" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-200 transform hover:scale-110">
+
+              {/* Email */}
+              <a
+                href="mailto:isaacayomide2019@gmail.com"
+                className="text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
+              >
                 <Mail size={24} className="sm:w-7 sm:h-7" />
               </a>
             </div>
+
           </div>
           
           {/* Professional Photo */}
@@ -72,7 +91,7 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="text-g-400 w-5 h-5 sm:w-6 sm:h-6" />
+        <ArrowDown className="text-yellow-600 w-5 h-5 sm:w-6 sm:h-6" />
       </div>
     </section>
   );

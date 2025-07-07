@@ -98,12 +98,14 @@ const Contact = () => {
                 />
               </div>
               
-              <Button 
-                className="w-full bg-gradient-to-r from-yellow-600 via-gray-800 to-yellow-600 hover:from-gray-800 hover:via-yellow-600 hover:to-gray-800 text-white py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
-              >
-                <Send size={20} />
-                Send Message
-              </Button>
+             <a
+  href="mailto:isaacayomide2019@gmail.com?subject=Project discussion&body=Tell me about your project..."
+  className="block w-full bg-gradient-to-r from-yellow-600 via-gray-800 to-yellow-600 hover:from-gray-800 hover:via-yellow-600 hover:to-gray-800 text-white py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
+>
+  <Send size={20} />
+  Send Message
+</a>
+
             </form>
           </CardContent>
         </Card>
