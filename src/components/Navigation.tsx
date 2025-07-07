@@ -25,9 +25,12 @@ const Navigation = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="text-xl sm:text-2xl font-bold text-white">
-            Code<span className="text-purple-400">Max</span>
-          </div>
+          <div className="flex items-center space-x-2 text-xl sm:text-2xl font-bold text-white">
+  <img src="lovable-uploads/logo.png" alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10 object-contain" />
+  <span>
+    Code<span className="text-yellow-500">Max</span>
+  </span>
+</div>
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-6 lg:space-x-8">
@@ -35,7 +38,7 @@ const Navigation = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-gray-300 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-gray-300 hover:text-yellow-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item}
                 </button>
@@ -61,7 +64,7 @@ const Navigation = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-gray-300 hover:text-purple-400 block px-3 py-3 text-base font-medium w-full text-left transition-colors duration-200"
+                className="text-gray-300 hover:text-yellow-500 block px-3 py-3 text-base font-medium w-full text-left transition-colors duration-200"
               >
                 {item}
               </button>

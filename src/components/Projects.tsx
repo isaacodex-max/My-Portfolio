@@ -43,9 +43,9 @@ const Projects = () => {
     <section id="projects" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-12 sm:mb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-          My <span className="text-purple-400">Projects</span>
+          My <span className="text-yellow-500">Projects</span>
         </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto mb-6 sm:mb-8"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-yellow-600  via-gray-800 to-yellow-600 mx-auto mb-6 sm:mb-8"></div>
         <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
           Here are some of my recent projects that showcase my skills and creativity
         </p>
@@ -55,7 +55,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <Card 
             key={project.title} 
-            className="bg-slate-800/50 backdrop-blur-sm border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 group animate-fade-in overflow-hidden"
+            className="bg-slate-800/50 backdrop-blur-sm border-yellow-600 hover:border-gray-600 transition-all duration-300 group animate-fade-in overflow-hidden"
             style={{ animationDelay: `${index * 0.2}s` }}
           >
             <div className="relative overflow-hidden">
@@ -67,14 +67,14 @@ const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <CardContent className="p-4 sm:p-6">
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">{project.title}</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-yellow-500 mb-2 sm:mb-3">{project.title}</h3>
               <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4 leading-relaxed">{project.description}</p>
               
               <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                 {project.tech.map((tech) => (
                   <span 
                     key={tech}
-                    className="px-2 sm:px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-xs sm:text-sm"
+                    className="px-2 sm:px-3 py-1 bg-black text-yellow-500 rounded-full text-xs sm:text-sm"
                   >
                     {tech}
                   </span>
@@ -85,14 +85,14 @@ const Projects = () => {
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white flex items-center justify-center gap-2 w-full sm:w-auto"
+                  className="border-yellow-600 text-gray-800 hover:bg-yellow-600 hover:text-white flex items-center justify-center gap-2 w-full sm:w-auto"
                 >
                   <Github size={16} />
                   Code
                 </Button>
                 <Button 
                   size="sm"
-                  className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 flex items-center justify-center gap-2 w-full sm:w-auto"
+                  className="bg-gradient-to-r from-yellow-600 to-gray-600 hover:from-gray-600 hover:to-yellow-600 flex items-center justify-center gap-2 w-full sm:w-auto"
                 >
                   <ExternalLink size={16} />
                   Live Demo
