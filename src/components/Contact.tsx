@@ -7,18 +7,21 @@ import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_be9tvl8',       // <-- Replace with your EmailJS Service ID
-      'template_tfmh1dk',      // <-- Replace with your EmailJS Template ID
+      'service_be9tvl8',
+      'template_755zag9',
       form.current,
-      'THVO1JN1hoZszcBrU'        // <-- Replace with your EmailJS Public Key
+      'THVO1JN1hoZszcBrU'
     ).then(
-      () => alert('Message sent successfully!'),
+      () => {
+        alert('Message sent successfully!');
+        window.location.reload(); // This will refresh the page
+      },
       (error) => alert('Failed to send message: ' + error.text)
     );
   };
