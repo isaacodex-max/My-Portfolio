@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# dist        <--- REMOVE or comment out this line!
 dist-ssr
 *.local
 
@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Build output
+dist/*
+!dist/output.css
