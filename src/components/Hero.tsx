@@ -1,4 +1,3 @@
-
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -44,13 +43,16 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="flex justify-center lg:justify-start space-x-6 animate-fade-in" style={{ animationDelay: "0.8s" }}>
+            <div
+              className="flex justify-center lg:justify-start py-4 mt-4 bg-black/30 rounded-xl w-full max-w-md mx-auto lg:mx-0 animate-fade-in"
+              style={{ animationDelay: "0.8s" }}
+            >
               {/* GitHub */}
               <a
                 href="https://github.com/isaacodex-max"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
+                className="p-1 text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
               >
                 <Github size={24} className="sm:w-7 sm:h-7" />
               </a>
@@ -60,7 +62,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/isaac-ayomide-1a96031b0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
+                className="p-1 text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
               >
                 <Linkedin size={24} className="sm:w-7 sm:h-7" />
               </a>
@@ -68,7 +70,7 @@ const Hero = () => {
               {/* Email */}
               <a
                 href="mailto:isaacayomide2019@gmail.com"
-                className="text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
+                className="p-1 text-gray-400 hover:text-yellow-600 transition-colors duration-200 transform hover:scale-110"
               >
                 <Mail size={24} className="sm:w-7 sm:h-7" />
               </a>
@@ -90,10 +92,10 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="text-yellow-600 w-5 h-5 sm:w-6 sm:h-6" />
       </div>
-    </section>
+    </section>  
   );
 };
 
