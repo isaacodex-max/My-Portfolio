@@ -26,7 +26,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2 text-xl sm:text-2xl font-bold text-white">
-  <img src="lovable-uploads/logo.png" alt="Logo" className="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
+  <img src="lovable-uploads/logo.png" alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10 object-contain" />
   <span>
     Code<span className="text-yellow-500">Max</span>
   </span>
