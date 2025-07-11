@@ -1,29 +1,44 @@
-import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin, Send, Youtube } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import emailjs from 'emailjs-com';
-import { useRef } from 'react';
+import { useState } from "react";
 
 const Contact = () => {
-  const form = useRef<HTMLFormElement>(null);
+  const [formData, setFormData] = useState({
+    user_name: '',
+    user_email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      'service_be9tvl8',
-      'template_755zag9',
-      form.current,
-      'THVO1JN1hoZszcBrU'
-    ).then(
-      () => {
-        alert('Message sent successfully!');
-        window.location.reload(); // This will refresh the page
-      },
-      (error) => alert('Failed to send message: ' + error.text)
-    );
+    const { user_name, user_email, subject, message } = formData;
+    if (!user_name.trim() || !user_email.trim() || !subject.trim() || !message.trim()) {
+      alert('Please fill in all required fields before sending.');
+      return;
+    }
+
+    const whatsappNumber = '2349065065415'; // Your WhatsApp number without '+'
+    const text = `*New Message from Website*\n\nName: ${user_name}\nEmail: ${user_email}\nSubject: ${subject}\nMessage: ${message}`;
+    const encodedText = encodeURIComponent(text);
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+    window.open(whatsappURL, '_blank');
+
+    // Refresh after short delay so WhatsApp link can open
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
   };
 
   return (
@@ -85,7 +100,7 @@ const Contact = () => {
         {/* Contact Form Section */}
         <Card className="bg-slate-800/50 backdrop-blur-sm border-yellow-600">
           <CardContent className="p-6 sm:p-8">
-            <form ref={form} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">Name</label>
@@ -94,6 +109,8 @@ const Contact = () => {
                     className="bg-slate-700/50 border-yellow-600 text-yellow-500 placeholder-gray-400"
                     placeholder="Isaac Aluko"
                     required
+                    value={formData.user_name}
+                    onChange={handleInputChange}
                   />
                 </div>
                 <div>
@@ -104,6 +121,8 @@ const Contact = () => {
                     className="bg-slate-700/50 border-yellow-600 text-yellow-500 placeholder-gray-400"
                     placeholder="your.email@example.com"
                     required
+                    value={formData.user_email}
+                    onChange={handleInputChange}
                   />
                 </div>
               </div>
@@ -115,6 +134,8 @@ const Contact = () => {
                   className="bg-slate-700/50 border-yellow-600 text-yellow-500 placeholder-gray-400"
                   placeholder="Project discussion"
                   required
+                  value={formData.subject}
+                  onChange={handleInputChange}
                 />
               </div>
 
@@ -125,6 +146,8 @@ const Contact = () => {
                   className="bg-slate-700/50 border-yellow-600 text-yellow-500 placeholder-gray-400 min-h-[120px]"
                   placeholder="Tell me about your project..."
                   required
+                  value={formData.message}
+                  onChange={handleInputChange}
                 />
               </div>
 
