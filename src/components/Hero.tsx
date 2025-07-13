@@ -34,13 +34,16 @@ const Hero = () => {
               >
                 View My Work
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-yellow-500 text-black hover:bg-yellow-600 hover:text-white px-6 sm:px-8 py-3 rounded-full transition-all duration-300 w-full sm:w-auto"
-              >
-                Download CV
-              </Button>
+              <a href="/ALuko Isaac Ayomide’s cv.pdf" download>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-yellow-500 text-black hover:bg-yellow-600 hover:text-white px-6 sm:px-8 py-3 rounded-full transition-all duration-300 w-full sm:w-auto"
+                  >
+                  Download CV
+                </Button>
+              </a>
+
             </div>
             
             <div
