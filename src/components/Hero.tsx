@@ -26,25 +26,25 @@ const Hero = () => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8 sm:mb-12 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-              <Button 
-                onClick={scrollToAbout}
-                size="lg" 
-                className="bg-gradient-to-r from-yellow-500 to-gray-800 hover:from-blue-950 hover:to-yellow-600 text-white px-6 sm:px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-              >
-                View My Work
-              </Button>
-              <a href="/ALuko Isaac Ayomide’s cv.pdf" download>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-yellow-500 text-black hover:bg-yellow-600 hover:text-white px-6 sm:px-8 py-3 rounded-full transition-all duration-300 w-full sm:w-auto"
-                  >
-                  Download CV
-                </Button>
-              </a>
+           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8 sm:mb-12 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+  <Button 
+    onClick={scrollToAbout}
+    size="lg" 
+    className="bg-gradient-to-r from-yellow-500 to-gray-800 hover:from-blue-950 hover:to-yellow-600 text-white px-6 sm:px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 sm:w-auto"
+  >
+    View My Work
+  </Button>
+  <a href="/ALuko Isaac Ayomide’s cv.pdf" download>
+    <Button 
+      variant="outline" 
+      size="lg"
+      className="border-yellow-500 text-black hover:bg-yellow-600 hover:text-white px-6 sm:px-8 py-3 rounded-full transition-all duration-300 sm:w-auto"
+    >
+      Download CV
+    </Button>
+  </a>
+</div>
 
-            </div>
             
             <div
               className="flex justify-center lg:justify-start py-4 mt-4 bg-black/30 rounded-xl w-full max-w-md mx-auto lg:mx-0 animate-fade-in"

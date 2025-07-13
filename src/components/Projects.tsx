@@ -25,16 +25,16 @@ const Projects = () => {
       description: "A beautiful weather dashboard that displays current conditions, forecasts, and interactive maps with data visualization.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
       tech: ["React", "Chart.js", "OpenWeather API", "CSS3"],
-      github: "https://github.com/isaacodex-max/ecom-website-main.git",
-      live: "https://ecom-website-main.vercel.app/"
+      github: "#",
+      live: "#"
     },
     {
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing modern design principles, smooth animations, and optimized performance.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
       tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      github: "https://github.com/isaacodex-max/ecom-website-main.git",
-      live: "https://ecom-website-main.vercel.app/"
+      github: "#",
+      live: "#"
     }
   ];
 
