@@ -18,15 +18,15 @@ const Projects = () => {
       image: "https://i.ibb.co/275qjbv8/2025-07-13-2.png",
       tech: ["Next.js", "React", "Tailwind", "TypeScript"],
       github: "https://github.com/isaacodex-max/academy-web-oasis.git",
-      live: "https://academy-web-oasis.vercel.app/"
+      live: "https://www.extensiveacademy.org/"
     },
     {
-      title: "Weather Dashboard",
+      title: "Naija-blog landing page",
       description: "A beautiful weather dashboard that displays current conditions, forecasts, and interactive maps with data visualization.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+      image: "https://i.ibb.co/ccgFH6mF/2025-07-19.png",
       tech: ["React", "Chart.js", "OpenWeather API", "CSS3"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/isaacodex-max/naija-vibe-blog-main.git",
+      live: "https://naija-vibe-blog-main.vercel.app/"
     },
     {
       title: "Portfolio Website",
