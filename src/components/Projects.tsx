@@ -21,13 +21,14 @@ const Projects = () => {
       live: "https://www.extensiveacademy.org/"
     },
     {
-      title: "Naija-blog landing page",
-      description: "A beautiful weather dashboard that displays current conditions, forecasts, and interactive maps with data visualization.",
+      title: "Naija-blog Landing Page",
+      description: "A modern Nigerian blog landing page featuring curated articles, category filters, responsive design, and engaging UI elements tailored for news and entertainment content.",
       image: "https://i.ibb.co/ccgFH6mF/2025-07-19.png",
-      tech: ["React", "Chart.js", "OpenWeather API", "CSS3"],
+      tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/isaacodex-max/naija-vibe-blog-main.git",
       live: "https://naija-vibe-blog-main.vercel.app/"
     },
+
     {
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing modern design principles, smooth animations, and optimized performance.",
