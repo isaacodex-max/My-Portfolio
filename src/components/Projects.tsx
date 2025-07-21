@@ -30,13 +30,14 @@ const Projects = () => {
     },
 
     {
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing modern design principles, smooth animations, and optimized performance.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
-      tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      github: "#",
-      live: "#"
+    title: "Coin Tracker",
+      description: "A real-time cryptocurrency tracker that allows users to search, view live prices, and visualize market trends with interactive charts and smooth UI animations.",
+      image: "https://i.ibb.co/ycnkhGwT/download-1.png",
+      tech: ["React", "TypeScript", "Tailwind CSS", "Chart.js", "CoinGecko API", "Vite"],
+      github: "https://github.com/isaacodex-max/isaacodex-max-coin-wave-visualizer-main.git", // Replace with your repo link
+      live: "https://isaacodex-max-coin-wave-visualizer.vercel.app/"
     }
+
   ];
 
   return (
